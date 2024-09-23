@@ -3,7 +3,7 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
     if(isNaN(feniInputValue)){
         return alert('invalid Donate amount');
     }
-    else if(feniInputValue < 0){
+    else if(feniInputValue <= 0){
         return alert('invalid Donate amount')
     }
     else{

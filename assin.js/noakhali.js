@@ -4,7 +4,7 @@ document.getElementById('donate-btn').addEventListener('click', function(){
     if(isNaN(inputValue)){
         return alert('invalid Donate amount')
     }
-    else if(inputValue < 0){
+    else if(inputValue <= 0){
         return alert('invalid Donate amount')
     }
     else{

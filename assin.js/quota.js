@@ -3,7 +3,7 @@ document.getElementById('quota-donate-btn').addEventListener('click', function()
     if(isNaN(quotaInputValue)){
         return alert('invalid Donate amount')
     }
-    else if(quotaInputValue < 0){
+    else if(quotaInputValue <= 0){
         return alert('invalid Donate amount')
     }
     else{
