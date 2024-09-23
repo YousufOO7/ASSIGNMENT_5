@@ -31,25 +31,69 @@
             </script>
 </head>
 <body class="font-lexend">
-    <header class="bg-secondary">
-        <nav class="mx-32 pt-5 pb-10">
-            <div class="navbar">
-                <div class="navbar-start">
-                  <a id="blog-btn" class="btn bg-primary py-1 px-6  font-bold">Home</a>
-                </div>
-                <div class="navbar-center gap-1 hidden lg:flex">
-                  <img src="./assets/logo.png" alt="">
-                  <p class="font-semibold">Donate Bangladesh</p>
-                </div>
-                <div class="navbar-end flex gap-2">
-                  <img src="./assets/coin.png" alt="">
-                  <p>
-                    <span>5500</span>
-                    <span>BDT</span>
-                  </p>
-                </div>
+    <header>
+      <div class="bg-gradient-to-t from-[#f6f4ee] w-full">
+        <nav class="mx-5 lg:mx-32 pb-5 ">
+          <div class="navbar">
+              <div class="navbar-start">
+                <a id="home-btn" class="btn bg-primary py-1 px-6  font-bold">Home</a>
               </div>
-        </nav>
+              <div class="navbar-center gap-1 flex">
+                <img src="./assets/logo.png" alt="">
+                <p class="font-semibold">Donate Bangladesh</p>
+              </div>
+              <div class="navbar-end flex gap-1">
+                <img  src="./assets/coin.png" alt="">
+                <p class="flex">
+                  <span id="balance-amount">5500</span>
+                  <span>BDT</span>
+                </p>
+              </div>
+            </div>
+      </nav>
+      </div>
     </header>
+
+
+    <main class="mx-5 lg:mx-40 mt-10">
+
+      <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+          <div class="collapse-content">
+            <p>DOM is a programming language , it shows us web page as like the tree object and programmer can easily rewrite or manipulate html files by using DOM.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+          <div class="collapse-content">
+            <p>We can easily select an element by using: Id, ClassName, TagName, QuerySelector, QuerySelectorAll </p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+          <div class="collapse-content">
+            <p>Event delegation is function of DOM , Where is can select an element which is add to his parent element.
+              And we can create a new element and add to his parent element and we can instead add an event listener to each new create element even we can using for bubbling to handle events simply. 
+            </p>
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles using the DOM?</div>
+          <div class="collapse-content">
+            <p>By using getAttributes, setAttribute, removeAttribute we can easily manipulate element. And we can using styles like using classList. , style. , 
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- assin.js file -->
+     <script src="./assin.js/index.js"></script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 document.getElementById('feni-donate-btn').addEventListener('click', function(){
     const feniInputValue = getInputValueById ('feni-input-value');
     if(isNaN(feniInputValue)){
-        return alert('only number please');
+        return alert('invalid Donate amount');
     }
     else if(feniInputValue < 0){
-        return alert('only number')
+        return alert('invalid Donate amount')
     }
     else{
         const feniDonateValue = getDonateValueById ('feni-donate-amount');
@@ -17,11 +17,22 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
          document.getElementById ('balance-amount').innerText = newBalanceAmount;
 
           // show history section
-        const div = document.createElement ('div')
-        div.innerHTML = `
-                <h1 class="font-bold text-lg mx-40 mt-10 mb-10 border-2 rounded-xl p-8">${feniInputValue} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
-                <span></span>
-            `
+          const today = new Date();
+          const div = document.createElement ('div')
+          div.classList.add('mx-5');
+          div.classList.add('font-bold');
+          div.classList.add('text-lg');
+          div.classList.add('lg:mx-40');
+          div.classList.add('mt-10');
+          div.classList.add('mb-10');
+          div.classList.add('border-2');
+          div.classList.add('rounded-xl');
+          div.classList.add('p-8');
+          div.innerHTML += `
+                  <h1>${feniInputValue} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+                  <span>${today}</span>
+                  
+              `
             document.getElementById ('history-container').appendChild(div);
         
     }

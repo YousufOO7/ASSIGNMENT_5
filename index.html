@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,42 +31,47 @@
         </script>
 </head>
 <body class="font-lexend">
-    <header class="bg-secondary sticky">
-        <nav class="mx-32 pt-5 pb-10">
-            <div class="navbar">
-                <div class="navbar-start">
-                  <a id="blog-btn" class="btn bg-primary py-1 px-6  font-bold">Blog</a>
-                </div>
-                <div class="navbar-center gap-1 hidden lg:flex">
-                  <img src="./assets/logo.png" alt="">
-                  <p class="font-semibold">Donate Bangladesh</p>
-                </div>
-                <div class="navbar-end flex gap-2">
-                  <img src="./assets/coin.png" alt="">
-                  <p>
-                    <span id="balance-amount">5500</span>
-                    <span>BDT</span>
-                  </p>
-                </div>
+    <header class="sticky top-0 z-10 backdrop-blur-lg">
+      <div class="bg-gradient-to-t from-[#f6f4ee] w-full">
+        <nav class="mx-5 lg:mx-32 pb-5 ">
+          <div class="navbar">
+              <div class="navbar-start">
+                <a id="blog-btn" class="btn bg-primary py-1 px-6  font-bold">Blog</a>
               </div>
-        </nav>
-        <div class="mx-auto items-center text-center pb-10">
-            <button id="show-donate-btn"  class="btn bg-primary px-8">Donation</button>
-            <button id="show-history-btn"  class="btn  text-gray-500 px-8 border-gray-300">History</button>
-        </div>
+              <div class="navbar-center gap-1 flex">
+                <img src="./assets/logo.png" alt="">
+                <p class="font-semibold">Donate Bangladesh</p>
+              </div>
+              <div class="navbar-end flex gap-1">
+                <img  src="./assets/coin.png" alt="">
+                <p class="flex">
+                  <span id="balance-amount">5500</span>
+                  <span>BDT</span>
+                </p>
+              </div>
+            </div>
+      </nav>
+      </div>
+      <div class="mx-auto items-center text-center pb-5 mt-5">
+        <button id="show-donate-btn"  class="btn bg-primary px-8">Donation</button>
+        <button id="show-history-btn"  class="btn  text-gray-500 px-8 border-gray-300">History</button>
+    </div>
+        
     </header>
 
-    <main> 
+    
+
+
+    <main class="relative"> 
        <!-- donate form -->
        <div id="donate-form">
-        <section class="mx-40 mt-10 mb-10 border-2 rounded-xl">
-            <div class="grid grid-cols-2 p-5 gap-10 ">
-                <div>
+        <section class="mx-5 lg:mx-40 mt-10 mb-10 border-2 rounded-xl">
+            <div class="lg:grid grid-cols-2 p-5 gap-10 ">
+                <div class="sm: mb-5">
                     <img src="./assets/noakhali.png" alt="">
                 </div>
                 <!-- noakhali donation side -->
                <div>
-
                 <button class="btn flex gap-2 mb-3">
                     <img src="./assets/coin.png" alt="">
                     <p class="text-gray-500">
@@ -74,7 +79,6 @@
                       <span>BDT</span>
                     </p>
                 </button>
-
                 <h1 class="font-bold mb-3">Donate for Flood at Noakhali, Bangladesh</h1>
                 <p class="text-sm text-gray-500 mb-3"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
@@ -104,9 +108,9 @@
             </div>  
         </section>
 
-        <section class="mx-40 mt-10 mb-10 border-2 rounded-xl">
-            <div class="grid grid-cols-2 p-5 gap-10 ">
-                <div>
+        <section class="mx-5 lg:mx-40 mt-10 mb-10 border-2 rounded-xl">
+            <div class="lg:grid grid-cols-2 p-5 gap-10 ">
+                <div class="sm: mb-5">
                     <img src="./assets/feni.png" alt="">
                 </div>
                 <!-- feni donation side -->
@@ -150,9 +154,9 @@
             </div>  
         </section>
       
-        <section class="mx-40 mt-10 mb-10 border-2 rounded-xl">
-            <div class="grid grid-cols-2 p-5 gap-10 ">
-                <div>
+        <section class="mx-5 lg:mx-40 mt-10 mb-10 border-2 rounded-xl">
+            <div class="lg:grid grid-cols-2 p-5 gap-10 ">
+                <div class="sm: mb-5">
                     <img src="./assets/quota-protest.png" alt="">
                 </div>
                 <!-- quota donation side -->
