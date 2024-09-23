@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
           <!-- Google Font -->
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,15 +34,15 @@
     <header>
       <div class="bg-gradient-to-t from-[#f6f4ee] w-full">
         <nav class="mx-5 lg:mx-32 pb-5 ">
-          <div class="navbar">
+          <div class="navbar sm: gap-2">
               <div class="navbar-start">
                 <a id="home-btn" class="btn bg-primary py-1 px-6  font-bold">Home</a>
               </div>
               <div class="navbar-center gap-1 flex">
-                <img src="./assets/logo.png" alt="">
+                <img class="sm: hidden lg:block" src="./assets/logo.png" alt="">
                 <p class="font-semibold">Donate Bangladesh</p>
               </div>
-              <div class="navbar-end flex gap-1">
+              <div class="navbar-end flex gap-1 sm: pl-6">
                 <img  src="./assets/coin.png" alt="">
                 <p class="flex">
                   <span id="balance-amount">5500</span>
@@ -76,7 +76,7 @@
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
           <div class="collapse-content">
-            <p>Event delegation is function of DOM , Where is can select an element which is add to his parent element.
+            <p>Event delegation is function of DOM , Where is can select an element which was added to his parent element.
               And we can create a new element and add to his parent element and we can instead add an event listener to each new create element even we can using for bubbling to handle events simply. 
             </p>
           </div>
