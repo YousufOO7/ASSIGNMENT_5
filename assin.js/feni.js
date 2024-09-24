@@ -24,17 +24,15 @@ document.getElementById('feni-donate-btn').addEventListener('click', function(){
           const today = new Date();
           const div = document.createElement ('div')
           div.classList.add('mx-5');
-          div.classList.add('font-bold');
-          div.classList.add('text-lg');
           div.classList.add('lg:mx-40');
           div.classList.add('mt-10');
           div.classList.add('mb-10');
           div.classList.add('border-2');
           div.classList.add('rounded-xl');
-          div.classList.add('p-8');
+          div.classList.add('p-6');
           div.innerHTML += `
-                  <h1>${feniInputValue} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
-                  <span>${today}</span>
+                  <h1 class="mb-2 font-bold text-xl">${feniInputValue} Taka is Donated for Flood Relief in Feni,Bangladesh</h1>
+                  <span class="text-sm">Date: ${today}</span>
                   
               `
             document.getElementById ('history-container').appendChild(div);
