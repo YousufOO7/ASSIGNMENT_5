@@ -1,3 +1,3 @@
 document.getElementById('blog-btn').addEventListener('click', function(){
-    window.location.href = './Blog.html';
+    window.location.href = './blog.html';
 })
