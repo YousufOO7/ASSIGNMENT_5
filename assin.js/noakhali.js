@@ -2,10 +2,13 @@ document.getElementById('donate-btn').addEventListener('click', function(){
     const inputValue = getInputValueById ('input-value');
 
     if(isNaN(inputValue)){
-        return alert('invalid Donate amount')
+        alert('invalid Donate amount');
+        document.getElementById('my_modal_1').close();
+        return;
     }
     else if(inputValue <= 0){
-        return alert('invalid Donate amount')
+        alert('invalid Donate amount')
+        document.getElementById('my_modal_1').close();
     }
     else{
         const donateValue = getDonateValueById ('donate-amount');

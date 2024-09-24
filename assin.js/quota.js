@@ -1,10 +1,15 @@
 document.getElementById('quota-donate-btn').addEventListener('click', function(){
     const quotaInputValue = getInputValueById ('qouta-input-value');
     if(isNaN(quotaInputValue)){
-        return alert('invalid Donate amount')
+        alert('invalid Donate amount');
+        document.getElementById('my_modal_3').close();
+        return;
+
     }
     else if(quotaInputValue <= 0){
-        return alert('invalid Donate amount')
+        alert('invalid Donate amount');
+        document.getElementById('my_modal_3').close();
+        return;
     }
     else{
         const qoutaDonateAmount = getDonateValueById ('qouta-donate-amount');

@@ -1,10 +1,14 @@
 document.getElementById('feni-donate-btn').addEventListener('click', function(){
     const feniInputValue = getInputValueById ('feni-input-value');
     if(isNaN(feniInputValue)){
-        return alert('invalid Donate amount');
+        alert('invalid Donate amount');
+        document.getElementById('my_modal_2').close();
+        return;
     }
     else if(feniInputValue <= 0){
-        return alert('invalid Donate amount')
+        alert('invalid Donate amount');
+        document.getElementById('my_modal_2').close();
+        return;
     }
     else{
         const feniDonateValue = getDonateValueById ('feni-donate-amount');
